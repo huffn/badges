@@ -207,6 +207,7 @@ function buildBadge(text: string) {
       } else {
         iconEl.addClass("inline-badge-extra");
         iconEl.setText(badgeType.split("|")[1].trim());
+		iconEl.dataset.badgeType = badgeType.split("|")[1].trim();
         attrType = 'text';
         badgeType = 'text';
       }
